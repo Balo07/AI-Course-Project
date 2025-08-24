@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useMemo, useState } from "react";
 import ProductCard from "./components/ProductCard.jsx";
 import { searchProducts, mapProduct } from "./lib/offApi.js";

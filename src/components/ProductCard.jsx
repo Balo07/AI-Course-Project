@@ -33,8 +33,9 @@ export default function ProductCard({ p, onToggle, saved }) {
 
         <div className="mt-3">
           <button
+            type="button"
             onClick={() => onToggle(p)}
-            className={\`px-3 py-1.5 rounded-xl text-sm \${saved ? "bg-gray-900 text-white" : "bg-gray-100 hover:bg-gray-200"}\`}
+            className={`px-3 py-1.5 rounded-xl text-sm ${saved ? "bg-gray-900 text-white" : "bg-gray-100 hover:bg-gray-200"}`}
           >
             {saved ? "Remove from Safe List" : "Save to Safe List"}
           </button>
